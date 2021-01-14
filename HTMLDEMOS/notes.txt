@@ -1,0 +1,2 @@
+ Git PAT for VSCode
+ a5f4abb254b6489170fd7ff124ec5522e9abc14e
