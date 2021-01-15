@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+    p#show {
+color: whitesmoke;
+    }
+
+    h3.show {
+color: blue;
+    }
+
+    h2 em {
+        color: green;
+    }
+
+    ul.menu {
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.menu li {
+        display: inline;
+    }
+
+    ul.menu li a {
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    h1 {
+        color: rgba(120, 0, 0, 0.3);
+    }
+<!-- child selector -->
+    ul > li {
+        list-style: square;
+        color: rgb(255, 165, 0);
+    }
+
+    ul > li ol {
+        list-style: none;
+    }
+
+    p {
+        color: hsla(20, 81%, 85%, 0.911);
+    }
+
+    body {
+        background-image: url(https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg);
+    }
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Examples</title>
+</head>
+<body>
+    <p id="show">This is colored paragraph with id selector</p>
+    <h3 class="show">This is colored header 3 with class selector</h3>
+
+    <h2>This is <em>heading</em> example with "em"</em></h1>
+    <h1>This is example with rgba(red, green, blue, alpha)</h1>
+    <p>This is exxample with hsla(hue, saturation, lightness, alpha)</p>
+    <ul class="menu">
+        <li><a href="#">Class selector example</a></li>
+        <li><a href="#">Class selector example</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Child selector example</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li>
+            <a href="#">Service</a>
+            <ol>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Locations</a></li>
+            </ol>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+</body>
+</html>
