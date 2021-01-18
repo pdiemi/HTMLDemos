@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .header {
+            background-color: rgb(61, 60, 60);
+            height: 100px;
+            color: whitesmoke;
+        }
+        .footer {
+            background-color:  rgb(61, 60, 60);
+            height: 50px;
+            color: whitesmoke;
+        }
+        .main-container {
+            background-color:  rgb(199, 197, 197);
+            border: 1px solid black;
+        }
+        .register-form {
+            background-color:  white;
+            border: 1px solid black;
+        }
+        .details {
+            background-color:  white;
+            border: 1px solid black;
+        }
+        .details-table {
+            border: 1px solid black;
+            column-span: 4;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <h1>MONDAY TIMES</h1>
+    </div>
+    <br>
+    <div>
+        <a href="#">News</a>
+        <a href="#">Sports</a>
+        <a href="#">Weather</a>
+    </div>
+    <br>
+    <div class="container">
+        <h2>User Section</h2>
+        <div class="register-form">
+            <h2>Register</h2>
+            <form >
+                Name: <input name="name" type="text" placeholder="enter your name"/><br><br>
+                Email: <input name="email" type="email" placeholder="enter your email"/><br><br>
+                City: <input name="city" type="text" placeholder="enter your city"/><br><br>
+                Income: <input name="income" type="number" placeholder="enter your income"/><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Details</h2>
+            <table class="details-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>City</th>
+                    <th>Income</th>
+                </tr>
+                <tr>
+                    <td>my name</td>
+                    <td>my email</td>
+                    <td>my city</td>
+                    <td>00000</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <p>Copyright 2014 Monday Times. All rights reserved.</p>
+    </div>
+</body>
+</html>

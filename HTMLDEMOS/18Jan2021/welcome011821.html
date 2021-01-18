@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Unstyled list</h3>
+    <ul class="list-unstyled">
+       <li>home</li> 
+       <li>products
+           <ul>
+               <li>gadgets</li>
+               <li>soaps</li>
+           </ul>
+       </li>
+       <li>about us</li>
+       <li>contacts</li>
+    </ul>
+    
+    <h3>List group</h3>
+    <ul class="list-group">
+        <li class='list-group-item list-group-item-primary'>home</li> 
+        <li class='list-group-item list-group-item-danger'>products
+        <li class='list-group-item list-group-item-secondary'>about us</li>
+        <li class='list-group-item list-group-item-warning'>contacts</li>
+     </ul>
+     <br>
+     <h3>Inline form</h3>
+     <form class="form-inline">
+         Username: <input type="text" class="form-control">
+         Password: <input type="password" class="form-control">
+         <br>
+         <button>Login</button>
+         <br>
+         <input class="form-control" list="mydata" placeholder="search city with datalist">
+         <datalist id="mydata">
+            <option value="New York">
+            <option value="Chicago">
+         </datalist>
+
+         <select class="form-select" placeholder="search city with select">
+            <option value="New York">New York</option>
+            <option value="Chicago">Chicago</option>
+            </select>
+     </form>
+
+
+    </div>
+</body>
+</html>

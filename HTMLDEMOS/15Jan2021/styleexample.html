@@ -32,7 +32,7 @@ color: blue;
     h1 {
         color: rgba(120, 0, 0, 0.3);
     }
-<!-- child selector -->
+
     ul > li {
         list-style: square;
         color: rgb(255, 165, 0);
@@ -42,12 +42,34 @@ color: blue;
         list-style: none;
     }
 
-    p {
+    #hsla {
         color: hsla(20, 81%, 85%, 0.911);
     }
 
     body {
         background-image: url(https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg);
+    }
+
+    #font-example {
+        font-size: 36px;
+    }
+    #text-align {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    div {
+        width: 300px;
+        height: 200px;
+        padding: 15px;
+        border: 10px solid yellow;
+        margin: 20px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 15px black, 5px 10px 15px whitesmoke;
+        color: whitesmoke;
+    }
+    h4 {
+        text-shadow: 10px 10px 15px yellow, 5px 10px 15px whitesmoke;
     }
 </style>
 
@@ -61,7 +83,9 @@ color: blue;
 
     <h2>This is <em>heading</em> example with "em"</em></h1>
     <h1>This is example with rgba(red, green, blue, alpha)</h1>
-    <p>This is exxample with hsla(hue, saturation, lightness, alpha)</p>
+    <p id="hsla">This is exxample with hsla(hue, saturation, lightness, alpha)</p>
+    <p id="font-example">Font size example</p>
+    <p id="text-align">Centered and uppercased text</p>
     <ul class="menu">
         <li><a href="#">Class selector example</a></li>
         <li><a href="#">Class selector example</a></li>
@@ -79,6 +103,13 @@ color: blue;
         </li>
         <li><a href="#">Contact</a></li>
     </ul>
+
+    <h4>Text shadow example</h4>
+    <div style="font-size: 20px;">
+        Div example:<br>
+        “I almost wish we were butterflies and liv'd but three summer days - three such days with you I could fill with more delight than fifty common years could ever contain.”
+― John Keats, Bright Star: Love Letters and Poems of John Keats to Fanny Brawne
+    </div>
 
 </body>
 </html>
