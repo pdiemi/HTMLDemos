@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Collapsible</h3>
+        <button class="btn btn-info" data-toggle="collapse" data-target="#demo">Click here</button>
+        <div id="demo" class="collapse">
+            Welcome to this simple example
+        </div>
+
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#cpanel">Collapse panel</a>
+                    </h4>
+                </div>
+            </div>
+            <div id="cpanel" class="panel-collapse collapse">
+                <div class="panel-body">Panel body</div>
+                <div class="panel-body">Panel footer</div>
+            </div>
+        </div>
+
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#regpanel">Register here</a>
+                    </h4>
+                </div>
+            </div>
+            <div id="regpanel" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="col-xs-4">
+                        <form>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                Name:<input type="text" class="form-control">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                Email:<input type="email" class="form-control">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                Income:<input type="number" class="form-control">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                Location:<input class="form-control" list="locationdata" placeholder="Choose a location">
+                                <datalist id="locationdata">
+                                    <option value="India">
+                                    <option value="USA">
+                                </datalist>
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                                City:<select class="form-select">
+                                    <option value="San Antonio">San Antonio</option>
+                                    <option value="Frisco">Frisco</option>
+                                    <option value="Numbai">Numbai</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button>Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Modal Example</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+        </div>
+
+        <h3>Card Example</h3>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Information</h5>
+                <h6 class="card-subtitle md-2 text-muted">Card sub-title</h6>
+                <p class="card-text">I wanna hang a map of the world in my house. Then I'm gonna put pins into all the locations that I've traveled to. But first, I'm gonna have to travel to the top two corners of the map so it won't fall down.<br><strong>Hedberg (1968 - 2005)</strong></p>
+                <a href="#" class="card-link">Link 1</a>
+                <a href="#" class="card-link">Link 2</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Information</h5>
+                <h6 class="card-subtitle md-2 text-muted">Card sub-title</h6>
+                <p class="card-text">I wanna hang a map of the world in my house. Then I'm gonna put pins into all the locations that I've traveled to. But first, I'm gonna have to travel to the top two corners of the map so it won't fall down.<br><strong>Hedberg (1968 - 2005)</strong></p>
+                <a href="#" class="card-link">Link 1</a>
+                <a href="#" class="card-link">Link 2</a>
+            </div>
+        </div>
+<!--
+        <div class="card text-center">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+        </div>
+-->
+        <div class="card text-center">
+            <div class="card-header">
+                
+            </div>
+            <div class="card-body">
+                <nav class="nav nav-tabs">
+                    <a href="#" class="nav-item nav-link active">Active</a>
+                    <a href="#" class="nav-item nav-link">Link</a>
+                    <a href="#" class="nav-item nav-link disabled">Disable</a>
+                </nav>
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
