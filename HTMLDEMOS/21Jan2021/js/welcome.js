@@ -25,15 +25,15 @@ function collectdata(){
 function add(){
     var x=document.getElementById("x").value
     var y=document.getElementById("y").value
-    console.log("x + y = "+ (Number (x) + Number (y)))
+    result.innerHTML="x + y = "+(Number (x) + Number (y))
 }
 function sub(){
     var x=document.getElementById("x").value
     var y=document.getElementById("y").value
-    console.log("x - y = "+ (Number (x) - Number (y)))
+    result.innerHTML="x - y = "+(Number (x) - Number (y))
 }
 function mul(){
     var x=document.getElementById("x").value
     var y=document.getElementById("y").value
-    console.log("x * y = "+ (Number (x) * Number (y)))
+    result.innerHTML="x * y = "+(Number (x) * Number (y))
 }
