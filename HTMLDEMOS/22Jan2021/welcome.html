@@ -7,16 +7,32 @@
 </head>
 <body>
     <script src="welcome.js"></script>
+    <div class="container">
+        <button onclick="getConfirmation()">Get Confirmation</button><br><br>
+        <button onclick="getData()">Get Data</button><br><br>
+        <button onclick="getGrade()">Get Grade</button><br><br>
+        <div>
+            <button onmouseover="callOn()" onmouseout="callOff()">Hove over me and watch the pink box</button>
+        </div><br>
 
-    <button onclick="getConfirmation()">Get Confirmation</button><br><br>
-    <button onclick="getData()">Get Data</button><br><br>
-    <button onclick="getGrade()">Get Grade</button><br><br>
-    <div onmouseover="callOn()" onmouseout="callOff()"><strong>Hove over me</strong></div><br>
-    
 
-    <div>
-        <textarea id="show" rows="3" style="background-color: rgb(240, 198, 183);">Result</textarea>
+        <div>
+            <textarea id="show" rows="3" style="background-color: rgb(240, 198, 183);">Result</textarea>
+        </div>
+        <br>
+        <h3>Object examples</h3>
+        <p>JSON</p>
+        <div>
+            <textarea id="show2" rows="3" style="background-color: rgb(219, 253, 179);"></textarea>
+        </div>
+        <script>
+            var mydata='{"name":"admin", "city":"SA"}'
+            var data=JSON.parse(mydata)
+            document.getElementById("show2").innerHTML=data.name
+        </script>
     </div>
+
+    
     
 </body>
 </html>
