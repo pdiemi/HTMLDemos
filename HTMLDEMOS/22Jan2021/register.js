@@ -22,5 +22,10 @@ function validateForm(){
         document.myForm.zipcode.focus()
         return false
     }
+    if(document.myForm.gender.value == ""){
+        alert("Please choose a gender")
+        document.myForm.denger.focus()
+        return false
+    }
     return true
 }

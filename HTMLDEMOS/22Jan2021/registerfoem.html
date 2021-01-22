@@ -21,7 +21,7 @@
                 <div class="panel-heading">User Register Form</div>
             </div>
                 <div class="panel-body">
-                    <div class="col-xs-4">
+                    <div class="col-xs-6">
                         <form id="myForm" name="myForm" onsubmit="return (validateForm())">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -31,6 +31,17 @@
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                                 Email:<input type="email" name="email" class="form-control">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                Gender:<br>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male"> Male</label><br>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female"> Female</label><br>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other"> Other</label>
                             </div>
                             <br>
                             <div class="input-group">
